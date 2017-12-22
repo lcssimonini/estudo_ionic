@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ProdutoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="produto">{{produto.nome}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content *ngIf="produto" padding>
+  <ion-card>
+    <img src="assets/imgs/download.png" />
+    <ion-card-content>
+      <ion-card-title>
+        {{produto.nome}}
+      </ion-card-title>
+      <p>
+        Detalhes do produtos
+      </p>
+      <p>
+        R$ {{produto.preco}} <ion-icon md="md-cart"></ion-icon>
+        
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
